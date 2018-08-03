@@ -1,0 +1,85 @@
+@font-face {
+  font-family: ParryHotter;
+  src: url(ParryHotter.ttf);
+}
+body {
+  background: url('img/hogwarts2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.70;
+  background-attachment: fixed;
+
+}
+table {
+  margin: 10px auto;
+  border-collapse: collapse;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: #111;
+  max-width: 2000px;
+}
+
+table td, table th {
+  border: .02px solid transparent	;
+  color: #DAA520	;
+  padding: 50px 20px 30px 20px;
+  font-family: ParryHotter;
+
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+  background: transparent;
+}
+
+th {
+  font-size: 30px;
+}
+
+td {
+  font-size: 20px;
+}
+
+img {
+  height: 200px;
+  width: 150px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+caption {
+  text-align: center;
+  font-family: ParryHotter;
+  font-size: 36px;
+  color: #DAA520	;
+}
+
+
+.mouseover:hover {
+  transform: scale(1.1);
+  font-size: 30px;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  th{
+    display: none;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: none;
+  }
+  .mouseover:hover {
+    transform: scale(1.0);
+  }
+
+  td {
+    margin: 0 auto;
+  }
+}
